@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "singularName": "account",
+    "pluralName": "accounts",
+    "displayName": "user_account",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "account_holder": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "accounts"
+    },
+    "available_balance": {
+      "type": "biginteger"
+    },
+    "credit_card_balance": {
+      "type": "biginteger"
+    },
+    "credit_card_daily_limit": {
+      "type": "biginteger"
+    }
+  }
+}

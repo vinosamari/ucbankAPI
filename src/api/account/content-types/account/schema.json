@@ -26,6 +26,9 @@
     },
     "credit_card_daily_limit": {
       "type": "biginteger"
+    },
+    "account_number": {
+      "type": "biginteger"
     }
   }
 }
